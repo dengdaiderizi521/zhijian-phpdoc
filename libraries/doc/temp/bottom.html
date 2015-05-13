@@ -1,0 +1,27 @@
+<div id="mm-blocker" class="mm-slideout"></div>
+<a id="hamburger" class="mm-slideout" href="#menu">
+<span></span>
+</a>
+<script type="text/javascript">
+	$(function() {
+		$('nav#menu').mmenu({
+			extensions		: [ 'widescreen', 'theme-white', 'effect-slide-menu' ],
+			slidingSubmenus	: false, //关闭平滑打开菜单
+			counters		: true,
+			dividers		: {
+				fixed 	: true
+			},
+			navbar 			:{
+				title	: '菜单'
+			},
+			navbars		: [{
+				content: ["searchfield"]
+			}, {
+				position: 'bottom',
+				content : ['<div>至简PHP文档生成器，官网<a href="https://www.php32.com/phpdoc" target="_blank">www.php32.com</a></div>']
+			}]
+		});
+	});
+</script>
+</body>
+</html>

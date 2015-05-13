@@ -1,0 +1,6 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^([^\/]*)\/([^\/]*)(?:\/(.*))?$ /index.php?c=$1&m=$2&_zj=$3&%{QUERY_STRING} [L]
