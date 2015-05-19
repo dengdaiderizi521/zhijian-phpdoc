@@ -21,6 +21,14 @@
 				content : ['<div>至简PHP文档生成器，官网<a href="https://www.php32.com/phpdoc" target="_blank">www.php32.com</a></div>']
 			}]
 		});
+		$('pre').each(function() {
+			var lang;
+			if ( (lang ='js') ) {
+				$(this).addClass('prettyprint linenums lang-' + lang);
+			}
+		});
+		$('code').addClass('prettyprint');
+	    prettyPrint();
 	});
 </script>
 </body>

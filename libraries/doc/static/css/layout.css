@@ -128,7 +128,6 @@ pre .faded
 {
 	border-left: 1px solid #5BC5FF;
 }
-
 hr
 {
 	background: rgba( 255, 255, 255, 0.5 );
@@ -532,7 +531,7 @@ a.btn
 */
 .table
 {
-	margin: 22px -20px;
+	/*margin: 22px -20px;*/
 }
 .table td
 {
@@ -1401,4 +1400,24 @@ h1 + .submenu
 pre {
 white-space: pre-wrap;
 word-wrap: break-word;
+background-color: #F5F5F5;
+}
+
+.panel-body a,pre a{
+	color:#0066CC !important;
+}
+
+.panel-body{
+	background-color: #fff;
+	color: #666;
+	font-size: 14px;
+}
+.doc_block{
+	margin-bottom: 5px;
+}
+.table{
+	margin-top:10px;
+}
+.s {
+    color: #d44950;
 }

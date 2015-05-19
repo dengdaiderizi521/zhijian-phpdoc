@@ -1,18 +1,18 @@
 <?php
 /**
   * Copyright (c) 2015, www.php32.com Inc. All Rights Reserved
-  * 至简PHP文档生成器
+  * 至简PHP项目文档生成器
   * PHP框架版本：至简PHP开源框架初学版
-  * 官方网站：http://www.php32.com/doc
-  * 日期：2015-05-01
+  * @link http://www.php32.com/doc
+  * @date 2015-05-15
+  * @version 2.0
   */
 class Home extends BaseController{
 
 	/**
-	 *   首页
-	 * @return NULL
+	 * @name 至简PHPDOC首页
 	 */
-	function index(){
+	function index  (){
 		//载入配置文件
 		$this->_init_config();
 
@@ -21,8 +21,7 @@ class Home extends BaseController{
 	}
 
 	/**
-	 * 生成DOC文件主方法
-	 * @return NULL
+	 * @name 生成DOC文件主方法
 	 */
 	function create_doc(){
 		ignore_user_abort();
@@ -37,10 +36,9 @@ class Home extends BaseController{
 	}
 
 	/**
-	 * 读取生成日志
-	 * @return NULL
+	 * @name 读取生成日志
 	 */
-	function task_log(){
+	final function task_log(){
 
 		if(empty($_POST) || empty($_POST['doc_path'])){
 			echo json_encode(array('msg'=>'参数错误'));die;
@@ -51,7 +49,7 @@ class Home extends BaseController{
 	}
 
 	/**
-	 * 初始化配置
+	 * @name 初始化配置
 	 */
 	private function _init_config(){
 		//载入配置文件
