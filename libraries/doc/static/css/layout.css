@@ -52,6 +52,14 @@ h4
 {
 	font-size: 20px;
 }
+h4 a{
+	font-size : 14px;
+	font-weight: 100;
+	cursor: pointer;
+}
+h4 a:hover{
+	text-decoration: underline;
+}
 h5
 {
 	font-size: 18px;
@@ -70,12 +78,14 @@ p, ul, ol, blockquote
 {
 	margin: 0 0 22px 0;
 }
-a, a:link, a:active, a:visited, a:hover
+a, a:link, a:active, a:visited
 {
 	color: rgba(0, 0, 0, 0.6);
 	text-decoration: none;
 }
-
+a:hover{
+	text-decoration: underline;
+}
 select,
 input[type="text"]
 {
@@ -83,8 +93,8 @@ input[type="text"]
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 
-	border: none;
-	border-radius: 20px;
+	/*border: none;*/
+	/*border-radius: 20px;*/
 	text-transform: none;
 	vertical-align: middle;
 	line-height: 20px;
@@ -600,7 +610,7 @@ a.btn
 	cursor: pointer;
 }
 
-.table td:first-child
+/*.table td:first-child
 {
 	width: 1%;
 }
@@ -623,7 +633,7 @@ a.btn
 .table td:first-child + td[colspan="4"]
 {
 	width: 99%;
-}
+}*/
 
 /*
 	Examples

@@ -4,11 +4,42 @@
   * 至简PHP项目文档生成器
   * PHP框架版本：至简PHP开源框架初学版
   * @link http://www.php32.com/doc
-  * @date 2015-05-15
-  * @version 2.0
+  * @date 2015-05-30
+  * @version 4.0
   */
 class Home extends BaseController{
 
+	function __construct(){
+		$this->check_login();
+	}
+
+	/**
+	 * 登陆验证
+	 */
+	function check_login(){
+		session_start();
+		if(empty($_SESSION['login']) && ( empty($_GET['m']) || $_GET['m'] != 'login')){
+			$this->view('login');die;
+		}
+	}
+
+	/**
+	 * 登陆
+	 */
+	function login(){
+		header('content-type:application/json;charset=utf-8');
+		require_once BASEPATH.'config/conf.php';
+		if(empty($_SESSION['login']) && ! empty($_POST['username']) && ! empty($_POST['password'])){
+			if( ! empty($user[$_POST['username']]) && md5($_POST['password']) == $user[$_POST['username']]){
+				$_SESSION['login'] = 1;
+				echo json_encode(array('code'=>1));
+			}else{
+				echo json_encode(array('code'=>2, 'msg'=>'用户名或密码错误'));
+			}
+		}else{
+			echo json_encode(array('code'=>2, 'msg'=>'用户名或密码错误'));
+		}
+	}
 	/**
 	 * @name 至简PHPDOC首页
 	 */
@@ -32,11 +63,26 @@ class Home extends BaseController{
 		//载入类库主文件
 		require_once BASEPATH.'libraries/doc/doc.php';
 		$obj = new Doc();
+		if( ! empty($_POST['private'])){
+			$obj->stat_private = true;
+		}
+		if( ! empty($_POST['protected'])){
+			$obj->stat_protected = true;
+		}
+		if( ! empty($_POST['check_login'])){
+			$obj->check_login = true;
+		}
+		if( ! empty($_POST['debug']) && ! empty($_POST['debug_form_url']) && ! empty($_POST['debug_sign'])){
+			$obj->debug = true;
+			$obj->debug_form_url = $_POST['debug_form_url'];
+			$obj->debug_sign = $_POST['debug_sign'];
+		}
 		$obj->startTask($_POST['doc_url'], $_POST['base_url'], $_POST['doc_path'], $_POST['code_path']);
 	}
 
 	/**
 	 * @name 读取生成日志
+	 * @url  http://www.baidu.com
 	 */
 	final function task_log(){
 
@@ -70,6 +116,8 @@ class Home extends BaseController{
 		if(empty($conf['code_path'])){
 			$conf['code_path'] = BASEPATH.'controller/';
 		}
+
+		$conf['login_path'] = BASEPATH.'libraries/doc/temp/login.php';
 
 		foreach ($conf as $k => $v) {
 			$this->set($k, $v);
