@@ -16,7 +16,7 @@ class Home extends BaseController{
 	/**
 	 * 登陆验证
 	 */
-	function check_login(){
+	private function check_login(){
 		session_start();
 		if(empty($_SESSION['login']) && ( empty($_GET['m']) || $_GET['m'] != 'login')){
 			$this->view('login');die;
