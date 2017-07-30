@@ -26,7 +26,7 @@ $form_param = ! empty($params[$_GET['class'].'/'.$_GET['method']]) && is_array($
 <script type="text/javascript" src="<?=$config['doc_url']?>/static/js/jquery.mmenu.min.all.js"></script>
 <script src="<?=$config['doc_url']?>/static/js/prettify.js"></script>
 <script src="<?=$config['doc_url']?>/static/js/JSONtree.js"></script>
-<title>接口测试-至简PHP项目(API)文档生成器-www.php32.com</title>
+<title>接口测试-至简PHP项目(API)文档生成器-www.zhijian.cc/doc</title>
 <style type="text/css">
     .bs-callout-success, .bs-callout-info{border-left-color: #eee; border-left-width: 1px;}
     body{font-size: 14px;}

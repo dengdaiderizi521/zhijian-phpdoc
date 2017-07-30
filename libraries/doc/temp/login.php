@@ -48,7 +48,7 @@ if(empty($_SESSION['login']) && ! empty($_POST['username']) && ! empty($_POST['p
 <script type="text/javascript" src="<?=$config['doc_url']?>/static/js/jquery.mmenu.min.all.js"></script>
 <script src="<?=$config['doc_url']?>/static/js/prettify.js"></script>
 <script src="<?=$config['doc_url']?>/static/js/JSONtree.js"></script>
-<title>登录-至简PHP项目(API)文档生成器-www.php32.com</title>
+<title>登录-至简PHP项目(API)文档生成器-www.zhijian.cc/doc</title>
 <style>
   .input-group{
     margin-bottom: 10px;

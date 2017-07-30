@@ -8,7 +8,7 @@
 <link href="/static/css/docs.min.css" type="text/css" rel="stylesheet" charset="utf-8" />
 <script src="/static/js/jquery.js"></script>
 <script src="/static/js/bootstrap.min.js"></script>
-<title>登录-至简PHP项目(API)文档生成器-www.php32.com</title>
+<title>登录-至简PHP项目(API)文档生成器-www.zhijian.cc/doc</title>
 <style>
   .input-group{
     margin-bottom: 10px;

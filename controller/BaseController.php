@@ -1,11 +1,11 @@
 <?php
 /**
-  * Copyright (c) 2015, www.php32.com Inc. All Rights Reserved
+  * Copyright © 2017, www.zhijian.cc 北京至简未来科技有限公司版权所有
   * 至简PHP开源框架
   * 基础控制器，包含设置模版变量，载入模版，调取模型
   * @version 至简初学版
-  * @link http://www.php32.com
-  * @date 2015-05-01
+  * @link https://www.zhijian.cc
+  * @date 2017-07-31
   * 
   */
 class BaseController{
@@ -57,4 +57,3 @@ class BaseController{
 		return $this->$model = new $modelName();
 	}
 }
-?>

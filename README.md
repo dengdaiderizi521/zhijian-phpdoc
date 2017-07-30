@@ -2,9 +2,9 @@
 这是一个独立的PHP项目文档生成工具。
 
 ## 官网地址
-至简PHP开源框架官网：[http://www.php32.com](http://www.php32.com)
+至简PHP开源框架官网：[https://www.zhijian.cc](https://www.zhijian.cc)
 
-至简PHP项目(API)文档生成工具官网：[http://www.php32.com/doc](http://www.php32.com/doc)
+至简PHP项目(API)文档生成工具官网：[https://www.zhijian.cc/doc](https://www.zhijian.cc/doc)
 
 ## 安装说明
 1. 下载程序
@@ -64,17 +64,18 @@ PHP数组：array(array('type'=>1), array('name'=>''))
 ```
 2. 你可以在 ```/libraries/doc/temp/login.php``` 中修改文档的登录验证方式
 3. 你可以在 ```/libraries/doc/temp/form.php``` 中增加或者修改接口测试表单所传递的参数
-4. 你可以在 ```/controller/Home.php``` 中修改程序的登录验证方式
+4. 你可以在 ```/libraries/doc/temp/debug.php``` 中修改与API服务器的调试方式
+5. 你可以在 ```/controller/Home.php``` 中修改程序的登录验证方式
 ## 完整示例
 ```
 
 /**
- * Copyright (c) 2015, www.php32.com Inc. All Rights Reserved
+ * Copyright © 2017, www.zhijian.cc 北京至简未来科技有限公司版权所有
  * 至简PHP项目文档生成器
- * @link http://www.php32.com/doc
- * @date 2015-05-30
+ * @link https://www.zhijian.cc/doc
+ * @date 2017-07-31
  * @version 4.0
- * @author admin@php32.com
+ * @author lab@zhijian.cc
  */
  
  class Test{
@@ -82,8 +83,8 @@ PHP数组：array(array('type'=>1), array('name'=>''))
      * @name 测试方法
      * @scene README演示时使用
      * @method GET
-     * @author admin@php32.com
-     * @params string 	$one 第一个参数
+     * @author lab@zhijian.cc
+     * @params string $one 第一个参数
      * @return JSON
      * {
      * 		name	: 名字,
@@ -104,7 +105,7 @@ PHP数组：array(array('type'=>1), array('name'=>''))
 ## 使用协议
 开源是一种美德，使用和支持开源的产品更是一种美德。
 
-使用本程序是完全免费的，版权归至简PHP开源框架官方([http://www.php32.com](http://www.php32.com))所拥有。
+使用至简PHP项目(API)文档生成工具是完全免费的，版权归北京至简未来科技有限公司(<a href="https://www.zhijian.cc">https://www.zhijian.cc</a>)所拥有。
 
 如果你修改了本程序，并且是非针对你的项目进行的个性化修改；我们希望你可以将修改后代码反馈给我们，我们将持续优化和增加本程序的功能。
 
@@ -114,4 +115,4 @@ PHP数组：array(array('type'=>1), array('name'=>''))
 
 如你所见，本程序的代码写的也不是非常的牛逼；所以请不要小觑了自己的力量。
 
-你可以通过admin#php32.com(#替换成@)联系到我们，也可以在我们的官网：[http://www.php32.com](http://www.php32.com)留言给我们。
+你可以通过邮箱：lab#zhijian.cc (#替换成@)，或者QQ群：367600383联系我们。

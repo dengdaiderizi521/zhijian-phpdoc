@@ -6,11 +6,12 @@
 <h1>至简PHP项目(API)文档生成工具</h1>
 <p>这是一个独立的PHP项目文档生成工具。</p>
 <h2>官网地址</h2>
-<p>至简PHP开源框架官网：<a href="http://www.php32.com">http://www.php32.com</a></p>
-<p>至简PHP项目(API)文档生成工具官网：<a href="http://www.php32.com/doc">http://www.php32.com/doc</a></p>
+<p>至简PHP开源框架官网：<a href="https://www.zhijian.cc/zhijianphp" target="_blank">https://www.zhijian.cc/zhijianphp</a></p>
+<p>至简PHP项目(API)文档生成工具官网：<a href="https://www.zhijian.cc/doc" target="_blank">https://www.zhijian.cc/doc</a></p>
+<p>至简PHP项目(API)文档生成工具GitHub：<a href="https://github.com/dengdaiderizi521/zhijian-phpdoc" target="_blank">https://github.com/dengdaiderizi521/zhijian-phpdoc</a></p>
 <h2>安装说明</h2>
 <ol>
-<li>下载程序：<a href="https://github.com/dengdaiderizi521/zhijian-phpdoc" target="_blank">点击下载</a></li>
+<li>下载程序：<a href="https://github.com/dengdaiderizi521/zhijian-phpdoc/archive/master.zip" target="_blank">点击下载</a></li>
 <li>解压程序，并给程序配置PHP环境(Apache需要开启rewrite_module)；请注意，程序必须存放在根目录。</li>
 <li>访问程序并登陆(初始账户: <code>admin</code>、 密码: <code>zhijianphp</code> ，可以在 <code>/config/conf.php</code> 中修改和添加账户密码)</li>
 <li>设置相关信息，如下
@@ -71,20 +72,21 @@ JSON格式字符串：[{"type":1},{"name":""}]
 PHP数组：array(array('type'=&gt;1), array('name'=&gt;''))
 
 </code></pre>
-<ol start="2">
-<li>你可以在 <code>/libraries/doc/temp/login.php</code> 中修改文档的登录验证方式</li>
-<li>你可以在 <code>/libraries/doc/temp/form.php</code> 中增加或者修改接口测试表单所传递的参数</li>
-<li>你可以在 <code>/controller/Home.php</code> 中修改程序的登录验证方式</li>
-</ol>
-<h2>完整示例</h2>
-<pre><code>
+    <ol start="2">
+        <li>你可以在 <code>/libraries/doc/temp/login.php</code> 中修改文档的登录验证方式</li>
+        <li>你可以在 <code>/libraries/doc/temp/form.php</code> 中增加或者修改接口测试表单所传递的参数</li>
+        <li>你可以在 <code>/libraries/doc/temp/debug.php</code> 中修改与API服务器的调试方式</li>
+        <li>你可以在 <code>/controller/Home.php</code> 中修改程序的登录验证方式</li>
+    </ol>
+    <h2>完整示例</h2>
+    <pre><code>
 /**
- * Copyright (c) 2015, www.php32.com Inc. All Rights Reserved
+ * Copyright © 2017, www.zhijian.cc 北京至简未来科技有限公司版权所有
  * 至简PHP项目文档生成器
- * @link http://www.php32.com/doc
- * @date 2015-05-30
+ * @link https://www.zhijian.cc/doc
+ * @date 2017-07-31
  * @version 4.0
- * @author admin@php32.com
+ * @author lab@zhijian.cc
  */
  
  class Test{
@@ -92,8 +94,8 @@ PHP数组：array(array('type'=&gt;1), array('name'=&gt;''))
      * @name 测试方法
      * @scene README演示时使用
      * @method GET
-     * @author admin@php32.com
-     * @params string   $one 第一个参数
+     * @author lab@zhijian.cc
+     * @params string $one 第一个参数
      * @return JSON
      * {
      *      name    : 名字,
@@ -110,11 +112,12 @@ PHP数组：array(array('type'=&gt;1), array('name'=&gt;''))
  }
 
 </code></pre>
-<h2>使用协议</h2>
-<p>开源是一种美德，使用和支持开源的产品更是一种美德。</p>
-<p>使用本程序是完全免费的，版权归至简PHP开源框架官方(<a href="http://www.php32.com">http://www.php32.com</a>)所拥有</p>
-<p>如果你修改了本程序，并且是非针对你的项目进行的个性化修改；我们希望你可以将修改后代码反馈给我们，我们将持续优化和增加本程序的功能。</p>
-<p>如果你在使用中发现了BUG，也请及时的反馈给我们。当然，如果是带着修改后的代码一起反馈将是一件非常美好的事情。</p>
-<p>我们希望不论你是作为一名使用者还是参与者，都能为开源力量贡献一份自己的力量。</p>
-<p>如你所见，本程序的代码写的也不是非常的牛逼；所以请不要小觑了自己的力量。</p>
-<p>你可以通过admin#php32.com(#替换成@)联系到我们，也可以在我们的官网：<a href="http://www.php32.com">http://www.php32.com</a>留言给我们。</p>
+    <h2>使用协议</h2>
+    <p>开源是一种美德，使用和支持开源的产品更是一种美德。</p>
+    <p>使用至简PHP项目(API)文档生成工具是完全免费的，版权归北京至简未来科技有限公司(<a href="https://www.zhijian.cc">https://www.zhijian.cc</a>)所拥有。</p>
+    <p>如果你修改了本程序，并且是非针对你的项目进行的个性化修改；我们希望你可以将修改后代码反馈给我们，我们将持续优化和增加本程序的功能。</p>
+    <p>如果你在使用中发现了BUG，也请及时的反馈给我们。当然，如果是带着修改后的代码一起反馈将是一件非常美好的事情。</p>
+    <p>我们希望不论你是作为一名使用者还是参与者，都能为开源力量贡献一份自己的力量。</p>
+    <p>如你所见，本程序的代码写的也不是非常的牛逼；所以请不要小觑了自己的力量。</p>
+    <p>你可以通过邮箱：lab#zhijian.cc (#替换成@)，或者QQ群：367600383联系我们。</p>
+</div>

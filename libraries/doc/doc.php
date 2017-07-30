@@ -1,10 +1,10 @@
 <?php
 /**
-  * Copyright (c) 2015, www.php32.com Inc. All Rights Reserved
+  * Copyright © 2017, www.zhijian.cc 北京至简未来科技有限公司版权所有
   * 至简PHP项目文档生成器
   * PHP框架版本：至简PHP开源框架初学版
-  * @link http://www.php32.com/doc
-  * @date 2015-05-30
+  * @link https://www.zhijian.cc
+  * @date 2017-07-31
   * @version 4.0
   */
 class Doc{

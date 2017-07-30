@@ -1,6 +1,11 @@
 <?php
+/**
+ * DEBUG文件，此处可以自定义调试请求逻辑
+ */
+
 include_once __DIR__.'/config.php';
 echo send_curl($config['debug_form_url'], $_POST);
+
 /**
  * 发送请求
  * @param string $url 请求的参数
